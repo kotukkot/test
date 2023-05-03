@@ -1,0 +1,88 @@
+:root {
+    --primary-color: 38, 38, 38;
+    --alternate-color: 255, 0, 255;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: #262626;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+textarea,
+button,
+input {    
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+button {
+    cursor: pointer;
+    user-select: none;
+}
+
+textarea,
+input {
+    border-radius: 4px;    
+}
+
+textarea {
+    resize: vertical;
+    max-height: 350px;
+    min-height: 150px;
+}
+
+.default_box {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.route_link {
+    padding: 5px 25px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: rgba(255,255,255, 1);
+    color: rgba(var(--primary-color, #262626), 1);
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color .2s;
+}
+
+.router-link-active.router-link-exact-active,
+.route_link:hover {
+    background-color: rgba(var(--primary-color, #262626), 1);
+    box-shadow: 0 0px 16px rgba(var(--alternate-color, #f0f), 1);
+    box-shadow: 0 0 3px rgba(var(--alternate-color, #f0f), 1),  0 0 8px rgba(var(--alternate-color, #f0f), 1),  0 0 15px rgba(var(--alternate-color, #f0f), 1);
+    color: #fff;
+}
+
+.btn_primary {
+    padding: 15px 25px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: rgba(var(--primary-color, #262626), 1);
+    transition: transform .2s, background-color .2s;
+    width: 100%;
+}
+
+.btn_primary:hover {
+    background-color: rgba(var(--alternate-color, #f0f), 1);
+    transform: translateY(-2px);
+}
